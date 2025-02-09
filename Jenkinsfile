@@ -6,6 +6,7 @@ pipeline {
         }
     }
     //Step SDLC
+    stages{
     stage('Builds Images') {
             steps {
                 sh 'docker compose build'
@@ -21,4 +22,5 @@ pipeline {
                 sh 'docker compose push'
             }
         }
+    }
 }
