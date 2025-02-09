@@ -1,0 +1,7 @@
+services:
+  2048-apps:
+    build: .
+    image: kiki23230704/2048-apps-images
+    container_name: ct-2048-apps
+    ports:
+      - "8090:80"
